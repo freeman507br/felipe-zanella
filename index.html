@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Felipe de Siqueira Zanella</title>
+  <style>
+    :root {
+      --primary: #163b65;
+      --secondary: #2f6fa3;
+      --text: #263238;
+      --muted: #60717d;
+      --light: #eef3f7;
+      --border: #d9e2e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #e8edf1;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .page {
+      width: min(1000px, 94%);
+      margin: 32px auto;
+      background: white;
+      box-shadow: 0 8px 30px rgba(0,0,0,.10);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 38px 46px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .profile-photo {
+      width: 125px;
+      height: 125px;
+      flex: 0 0 125px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,.85);
+      background: rgba(255,255,255,.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #dbeaf7;
+      font-size: 12px;
+      line-height: 1.3;
+      overflow: hidden;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-info {
+      flex: 1;
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 34px;
+      letter-spacing: .3px;
+    }
+
+    header .title {
+      font-size: 18px;
+      color: #dbeaf7;
+      margin-bottom: 18px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      font-size: 14px;
+      color: #edf5fb;
+    }
+
+    main {
+      padding: 36px 46px 44px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section:last-child { margin-bottom: 0; }
+
+    h2 {
+      margin: 0 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary);
+      color: var(--primary);
+      font-size: 19px;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+
+    .summary {
+      font-size: 15.5px;
+      color: #37474f;
+    }
+
+    .job {
+      position: relative;
+      margin-bottom: 22px;
+      padding-left: 20px;
+      border-left: 3px solid var(--secondary);
+    }
+
+    .job:last-child { margin-bottom: 0; }
+
+    .job h3 {
+      margin: 0;
+      color: #1d354d;
+      font-size: 17px;
+    }
+
+    .company {
+      font-weight: 600;
+      color: var(--secondary);
+    }
+
+    .period {
+      color: var(--muted);
+      font-size: 13.5px;
+      margin: 3px 0 7px;
+    }
+
+    .education-item {
+      margin-bottom: 15px;
+    }
+
+    .education-item strong {
+      color: #1d354d;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .skill-group {
+      background: var(--light);
+      border: 1px solid var(--border);
+      padding: 14px 16px;
+      border-radius: 6px;
+    }
+
+    .skill-group strong {
+      display: block;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    .language {
+      display: inline-block;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 7px 14px;
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    @media print {
+      body { background: white; }
+      .page {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+      }
+      header { padding: 28px 38px; }
+      main { padding: 28px 38px; }
+      section { break-inside: avoid; }
+    }
+
+    @media (max-width: 650px) {
+      header, main { padding: 28px 24px; }
+      header { flex-direction: column; text-align: center; }
+      .profile-photo { width: 110px; height: 110px; flex-basis: 110px; }
+      header h1 { font-size: 28px; }
+      .contact { justify-content: center; }
+      .skills { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="profile-photo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHPC7ELzRzuTg/profile-displayphoto-scale_400_400/B4DZygBnuWIgAg-/0/1772211308041?e=1790208000&v=beta&t=GDxpwC2KBntJuKW_yjUnY1Sm3RWtA2GSLG2VqZrW960" alt="Foto de perfil de Felipe de Siqueira Zanella">
+      </div>
+
+      <div class="header-info">
+        <h1>Felipe de Siqueira Zanella</h1>
+        <div class="title">Engenheiro de Software Sênior | Full Stack Developer</div>
+        <div class="contact">
+          <span>33 anos</span>
+          <span>Solteiro</span>
+          <span>Dois Vizinhos - PR</span>
+          <span>felipeszanella@gmail.com</span>
+          <span>(46) 99977-5946</span>
+          <span>
+            <a class="contact" href="https://www.linkedin.com/in/felipe-siqueira-zanella-3720b93b4/">
+              https://www.linkedin.com/in/felipe-siqueira-zanella-3720b93b4/
+            </a>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Perfil Profissional</h2>
+        <p class="summary">
+          Engenheiro de Software com sólida experiência em desenvolvimento de sistemas,
+          atuando em ambientes corporativos e projetos de software desde 2017.
+          Experiência abrangente em desenvolvimento back-end, front-end, APIs,
+          aplicações mobile, bancos de dados e integração contínua. Perfil técnico
+          com experiência em diferentes linguagens e frameworks, além de atuação
+          como professor na área de tecnologia.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experiência Profissional</h2>
+
+        <div class="job">
+          <h3>Engenheiro de Software Sênior</h3>
+          <div class="company">Dell Technologies</div>
+          <div class="period">Novembro de 2021 — Setembro de 2026</div>
+        </div>
+
+        <div class="job">
+          <h3>Professor</h3>
+          <div class="company">UNISEP</div>
+          <div class="period">Março de 2024 — Julho de 2024</div>
+        </div>
+
+        <div class="job">
+          <h3>Programador Full Stack</h3>
+          <div class="company">Leigado</div>
+          <div class="period">Agosto de 2021 — Novembro de 2021</div>
+        </div>
+
+        <div class="job">
+          <h3>Programador de Software</h3>
+          <div class="company">Precisa Fábrica de Software</div>
+          <div class="period">Agosto de 2018 — Agosto de 2021</div>
+        </div>
+
+        <div class="job">
+          <h3>Desenvolvedor Trainee</h3>
+          <div class="company">CISS S.A.</div>
+          <div class="period">Agosto de 2017 — Junho de 2018</div>
+        </div>
+
+        <div class="job">
+          <h3>Desenvolvedor Full Stack</h3>
+          <div class="company">Leigado</div>
+          <div class="period">Janeiro de 2017 — Agosto de 2017</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Formação Acadêmica</h2>
+
+        <div class="education-item">
+          <strong>Especialização em Computer Systems Networking and Telecommunications</strong><br>
+          UTFPR
+        </div>
+
+        <div class="education-item">
+          <strong>Bacharelado em Sistemas de Informação</strong><br>
+          UNISEP — Conclusão em 2018
+        </div>
+      </section>
+
+      <section>
+        <h2>Competências Técnicas</h2>
+
+        <div class="skills">
+          <div class="skill-group">
+            <strong>Java</strong>
+            RESTEasy, Spring Boot, Quarkus
+          </div>
+
+          <div class="skill-group">
+            <strong>Python</strong>
+            FastAPI, Flask
+          </div>
+
+          <div class="skill-group">
+            <strong>C#</strong>
+            .NET
+          </div>
+
+          <div class="skill-group">
+            <strong>Front-end</strong>
+            JavaScript, TypeScript, Angular, Cypress
+          </div>
+
+          <div class="skill-group">
+            <strong>Mobile</strong>
+            Flutter
+          </div>
+
+          <div class="skill-group">
+            <strong>Bancos de Dados</strong>
+            SQL e NoSQL
+          </div>
+
+          <div class="skill-group">
+            <strong>DevOps / CI/CD</strong>
+            GitLab CI/CD
+          </div>
+
+          <div class="skill-group">
+            <strong>Desenvolvimento</strong>
+            APIs REST, desenvolvimento Full Stack e integração de sistemas
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Idiomas</h2>
+        <span class="language"><strong>Português:</strong> Fluente / Nativo</span>
+        <span class="language"><strong>Inglês:</strong> Fluente</span>
+      </section>
+
+      <section>
+        <h2>Cursos e Certificações</h2>
+        <p>
+          <strong>Curso de Inglês — Wizard</strong>
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
