@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume of Felipe de Siqueira Zanella, Senior Software Engineer and Senior Full Stack Developer.">
+  <title>Felipe de Siqueira Zanella | Senior Software Engineer</title>
   <title>Currículo - Felipe de Siqueira Zanella</title>
   <style>
     :root {
@@ -196,10 +198,40 @@
       .skills { grid-template-columns: 1fr; }
     }
   </style>
+  <style>
+    .legacy { display: none; }
+    .resume { width: min(1000px, 94%); margin: 32px auto; background: #fff; box-shadow: 0 8px 30px rgba(0,0,0,.10); }
+    .resume header { background: #163b65; color: #fff; padding: 38px 46px; display: flex; align-items: center; gap: 28px; }
+    .resume .photo { width: 125px; height: 125px; flex: 0 0 125px; border-radius: 50%; border: 4px solid rgba(255,255,255,.85); overflow: hidden; }
+    .resume .photo img { width: 100%; height: 100%; object-fit: cover; }
+    .resume h1 { margin: 0 0 6px; font-size: 34px; letter-spacing: .3px; }
+    .resume .role { font-size: 18px; color: #dbeaf7; margin-bottom: 14px; }
+    .resume .contact { display: flex; flex-wrap: wrap; gap: 7px 18px; font-size: 14px; color: #edf5fb; }
+    .resume .contact a { color: inherit; text-underline-offset: 2px; }
+    .resume .availability { display: inline-block; margin-top: 15px; padding: 4px 10px; border: 1px solid rgba(255,255,255,.65); border-radius: 20px; font-size: 13px; }
+    .resume main { padding: 36px 46px 44px; }
+    .resume section { margin-bottom: 30px; }
+    .resume h2 { margin: 0 0 16px; padding-bottom: 8px; border-bottom: 2px solid #163b65; color: #163b65; font-size: 19px; text-transform: uppercase; letter-spacing: .8px; }
+    .resume .summary { margin: 0; font-size: 15.5px; color: #37474f; }
+    .resume .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .resume .card { background: #eef3f7; border: 1px solid #d9e2e8; padding: 14px 16px; border-radius: 6px; }
+    .resume .card strong { display: block; color: #163b65; margin-bottom: 5px; }
+    .resume .job { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid #2f6fa3; break-inside: avoid; }
+    .resume .job:last-child { margin-bottom: 0; }
+    .resume .job h3 { margin: 0; color: #1d354d; font-size: 17px; }
+    .resume .company { font-weight: 600; color: #2f6fa3; }
+    .resume .period { color: #60717d; font-size: 13.5px; margin: 3px 0 7px; }
+    .resume ul { margin: 7px 0 0; padding-left: 19px; }
+    .resume li { margin-bottom: 4px; }
+    .resume .education { margin-bottom: 15px; }
+    .resume .language { display: inline-block; background: #eef3f7; border: 1px solid #d9e2e8; border-radius: 20px; padding: 7px 14px; margin: 0 8px 8px 0; font-size: 14px; }
+    @media print { .resume { width: 100%; margin: 0; box-shadow: none; } .resume header { padding: 28px 38px; } .resume main { padding: 28px 38px; } }
+    @media (max-width: 650px) { .resume header, .resume main { padding: 28px 24px; } .resume header { flex-direction: column; text-align: center; } .resume .photo { width: 110px; height: 110px; flex-basis: 110px; } .resume h1 { font-size: 28px; } .resume .contact { justify-content: center; } .resume .grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 
 <body>
-  <div class="page">
+  <div class="page legacy">
     <header>
       <div class="profile-photo">
         <img src="https://media.licdn.com/dms/image/v2/D4D03AQHPC7ELzRzuTg/profile-displayphoto-scale_400_400/B4DZygBnuWIgAg-/0/1772211308041?e=1790208000&v=beta&t=GDxpwC2KBntJuKW_yjUnY1Sm3RWtA2GSLG2VqZrW960" alt="Foto de perfil de Felipe de Siqueira Zanella">
@@ -348,6 +380,32 @@
           <strong>Curso de Inglês — Wizard</strong>
         </p>
       </section>
+    </main>
+  </div>
+  <div class="resume">
+    <header>
+      <div class="photo"><img src="perfil.jpg" alt="Portrait of Felipe de Siqueira Zanella"></div>
+      <div>
+        <h1>Felipe de Siqueira Zanella</h1>
+        <div class="role">Senior Software Engineer | Senior Full Stack Developer</div>
+        <div class="contact"><span>Dois Vizinhos, Paraná, Brazil</span><span>felipeszanella@gmail.com</span><span>+55 46 99977-5946</span><a href="https://www.linkedin.com/in/felipe-siqueira-zanella-3720b93b4/" target="_blank" rel="noopener">LinkedIn</a><a href="#portfolio">Portfolio</a></div>
+        <span class="availability">Available immediately</span>
+      </div>
+    </header>
+    <main>
+      <section><h2>Professional Summary</h2><p class="summary">Senior Software Engineer and Full Stack Developer with approximately nine years of experience building enterprise applications, REST APIs, microservices, and modern web solutions. Nearly five years at Dell Technologies contributing to global corporate systems and distributed engineering teams. Strong background in Java, Spring Boot, Quarkus, Angular, TypeScript, Python, and .NET, with hands-on experience in CI/CD, containerized delivery, cloud deployment, and automated testing. Experienced in technical mentoring, architectural decisions, legacy modernization, and daily professional communication in English.</p></section>
+      <section><h2>Core Expertise</h2><div class="grid"><div class="card"><strong>Software Engineering</strong>Enterprise systems, RESTful APIs, microservices, full stack development, systems integration, and legacy modernization.</div><div class="card"><strong>Technical Leadership</strong>Architecture discussions, code reviews, mentoring, engineering standards, technical documentation, and distributed collaboration.</div><div class="card"><strong>Delivery and Quality</strong>GitLab CI/CD, Docker, Kubernetes, cloud deployment practices, Cypress, and automated testing.</div></div></section>
+      <section><h2>Professional Experience</h2>
+        <article class="job"><h3>Senior Software Engineer</h3><div class="company">Dell Technologies</div><div class="period">November 2021 – September 2026 | Global enterprise software</div><ul><li>Designed, developed, and optimized high-performance REST APIs and resilient microservices for large-scale global corporate systems.</li><li>Built full stack solutions using Java, Spring Boot, Quarkus, Angular, TypeScript, Python, and .NET.</li><li>Contributed to architecture decisions, platform integrations, API ecosystems, and legacy modernization, reducing technical debt and improving maintainability.</li><li>Implemented CI/CD workflows with GitLab CI/CD, Docker, Kubernetes, and cloud deployment practices.</li><li>Expanded end-to-end automation with Cypress, strengthening test coverage, release confidence, and software quality.</li><li>Mentored developers, conducted code reviews, and helped define engineering practices across distributed teams.</li><li>Worked in English daily through global meetings, technical documentation, code reviews, and cross-functional alignment.</li></ul></article>
+        <article class="job"><h3>Lecturer</h3><div class="company">UNISEP</div><div class="period">March 2024 – July 2024 | Concurrent part-time academic role</div><ul><li>Taught undergraduate technology students, translating complex technical concepts into clear guidance and supporting professional development.</li></ul></article>
+        <article class="job"><h3>Full Stack Developer</h3><div class="company">Leigado</div><div class="period">August 2021 – November 2021; January 2017 – August 2017</div><ul><li>Contributed to full stack application development across backend, frontend, database, and systems integration activities.</li></ul></article>
+        <article class="job"><h3>Software Developer</h3><div class="company">Precisa Fábrica de Software</div><div class="period">August 2018 – August 2021</div><ul><li>Developed and maintained software applications in a software factory environment, contributing across the application lifecycle with multidisciplinary delivery teams.</li></ul></article>
+        <article class="job"><h3>Trainee Developer</h3><div class="company">CISS S.A.</div><div class="period">August 2017 – June 2018</div><ul><li>Supported enterprise application development and built a foundation in structured software engineering, teamwork, and production-oriented delivery practices.</li></ul></article>
+      </section>
+      <section><h2>Technical Skills</h2><div class="grid"><div class="card"><strong>Backend and APIs</strong>Java (approximately 9 years), Spring Boot (5+ years), Quarkus, RESTEasy, Python (3+ years), FastAPI, Flask, C#/.NET (3+ years), RESTful APIs, and microservices.</div><div class="card"><strong>Frontend and Mobile</strong>JavaScript, TypeScript, Angular (5+ years), Cypress, and Flutter.</div><div class="card"><strong>Data</strong>Relational databases, SQL, non-relational databases, NoSQL, and data modeling.</div><div class="card"><strong>DevOps and Cloud</strong>GitLab CI/CD, Docker, Kubernetes (4+ years), continuous delivery pipelines, and cloud deployment practices.</div><div class="card"><strong>Engineering Practices</strong>Automated testing, code reviews, architecture decisions, technical mentoring, quality assurance, and technical documentation.</div></div></section>
+      <section><h2>Education</h2><div class="education"><strong>Postgraduate Specialization in Computer Systems Networking and Telecommunications</strong><br>Federal University of Technology – Paraná (UTFPR)</div><div class="education"><strong>Bachelor of Information Systems</strong><br>UNISEP | Completed in 2018</div></section>
+      <section><h2>Languages</h2><span class="language"><strong>Portuguese:</strong> Native</span><span class="language"><strong>English:</strong> Advanced to fluent professional proficiency, used daily in global technical environments</span></section>
+      <section id="portfolio"><h2>Portfolio</h2><p class="summary">Portfolio details are available upon request.</p></section>
     </main>
   </div>
 </body>
