@@ -1,4 +1,5 @@
 const languageToggle = document.getElementById("language-toggle");
+const printButton = document.getElementById("print-button");
 const resumeContent = document.getElementById("resume-content");
 const description = document.querySelector('meta[name="description"]');
 
@@ -17,6 +18,8 @@ async function setLanguage(language) {
     description.content = metadata.dataset.description;
     languageToggle.textContent = metadata.dataset.toggleLabel;
     languageToggle.setAttribute("aria-label", metadata.dataset.toggleAriaLabel);
+    printButton.textContent = metadata.dataset.printLabel;
+    printButton.setAttribute("aria-label", metadata.dataset.printAriaLabel);
     resumeContent.innerHTML = resumeTemplate.innerHTML;
     localStorage.setItem("resume-language", language);
 }
@@ -25,6 +28,8 @@ languageToggle.addEventListener("click", () => {
     const nextLanguage = document.documentElement.lang === "pt-BR" ? "english" : "portuguese";
     setLanguage(nextLanguage).catch(console.error);
 });
+
+printButton.addEventListener("click", () => window.print());
 
 const savedLanguage = localStorage.getItem("resume-language");
 setLanguage(savedLanguage === "portuguese" || savedLanguage === "pt" ? "portuguese" : "english").catch(console.error);
