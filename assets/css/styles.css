@@ -21,6 +21,16 @@
     background: #eef3f7;
 }
 
+.language-switcher #download-button {
+    background: #163b65;
+    color: #fff;
+}
+
+.language-switcher #download-button:hover,
+.language-switcher #download-button:focus-visible {
+    background: #245987;
+}
+
 .resume {
     width: min(1000px, 94%);
     margin: 32px auto;
